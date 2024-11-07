@@ -14,7 +14,7 @@ export default function PokemonList() {
   const { data, isPending, error } = useFetch(url);
 
   return (
-    <div className="flex flex-wrap justify-center px-20 pt-4 pb-12">
+    <div className="flex flex-wrap justify-center px-4 md:px-20 pt-4 pb-12">
       {error && (
         <div className="text-center">
           <img src={ditto} alt="Ditto" className="w-56" />
